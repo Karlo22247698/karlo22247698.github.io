@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Karlo Al Hindy, ICT Student</title>
+  <meta name="description" content="Karlo Al Hindy is an ICT diploma student in Sydney building towards a career in cyber security. Resume, skills and portfolio.">
+  <meta name="author" content="Karlo Al Hindy">
+  <meta name="theme-color" content="#0f1b2d">
+
+  <!-- Google Fonts: JetBrains Mono for headings, Inter for body text.
+       The same link is used on every page. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Favicon set (made with favicon.io style files, kept in the favicon folder) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- Bootstrap 5.3 and Bootstrap Icons (loaded from a CDN, with integrity checks) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+
+  <!-- Custom CSS comes AFTER Bootstrap so it can override it -->
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- NAVIGATION 1 of 2: sticky top menu, identical on every page.
+       data-bs-theme="dark" makes Bootstrap draw the mobile menu icon in white. -->
+  <nav class="navbar navbar-expand-lg sticky-top site-nav" data-bs-theme="dark" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="brand-mark" aria-hidden="true">K_</span>Karlo Al Hindy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+              aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO: introduction, two calls to action, and a decorative terminal card -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <p class="eyebrow">Resume and portfolio</p>
+          <h1>Karlo Al Hindy</h1>
+          <p class="lead">ICT diploma student building the technical foundations for a career in cyber security.</p>
+          <p>I speak English and Arabic, and I have worked in IT support, hospitality, retail and construction. I am looking for part-time or casual work while I study.</p>
+          <div class="hero-actions mt-4">
+            <a class="btn btn-accent btn-lg" href="portfolio.html">View portfolio</a>
+            <a class="btn btn-ghost btn-lg" href="pdf/karlo-al-hindy-resume.pdf" download><i class="bi bi-download" aria-hidden="true"></i> Download resume (PDF)</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <!-- Decorative only: the same facts appear in the page text, so it is hidden from screen readers -->
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal-dots"><span></span><span></span><span></span></div>
+<pre><span class="prompt">$</span> whoami
+<span class="out">karlo al hindy</span>
+<span class="prompt">$</span> cat profile.txt
+<span class="out">studying   diploma of ict
+languages  english, arabic
+focus      cyber security
+based in   sydney, nsw</span></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ABOUT ME: short introduction on the landing page -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <p class="eyebrow">Introduction</p>
+            <h2 id="about-heading">About me</h2>
+            <p>I am a motivated university student working towards a Diploma of Information and Communication Technologies at Western Sydney University. I enjoy technology and multimedia, and I pick up new tools quickly.</p>
+            <p>My jobs have taken me from fast-paced hospitality to retail, IT support and construction. They taught me to manage my time, communicate clearly and work confidently in demanding settings.</p>
+            <a class="btn btn-outline-teal" href="about.html">More about me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AT A GLANCE: three short summaries that link into the resume -->
+    <section class="section section-white" aria-labelledby="glance-heading">
+      <div class="container">
+        <h2 id="glance-heading">At a glance</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="info-card">
+              <span class="icon" aria-hidden="true"><i class="bi bi-mortarboard-fill"></i></span>
+              <h3>Education</h3>
+              <p>Diploma of Information and Communication Technologies, Western Sydney University, Penrith Campus. Graduating 2026.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="info-card">
+              <span class="icon" aria-hidden="true"><i class="bi bi-briefcase-fill"></i></span>
+              <h3>Experience</h3>
+              <p>Five roles since 2022 across hospitality, retail, IT support and construction.</p>
+              <a href="resume.html">See my resume</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="info-card">
+              <span class="icon" aria-hidden="true"><i class="bi bi-translate"></i></span>
+              <h3>Languages</h3>
+              <p>Proficient in spoken and written English and Arabic.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK: previews that link to the portfolio page -->
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <p class="eyebrow">Portfolio</p>
+        <h2 id="featured-heading">Featured work</h2>
+        <p>Planning work for this website, from structure to colour and type.</p>
+        <div class="row g-4 mb-4">
+          <div class="col-12 col-md-4">
+            <a class="work-card text-decoration-none" href="portfolio.html">
+              <div class="work-thumb"><img src="images/sitemap-plan-thumb.webp" width="720" height="474" alt="Sitemap diagram: a Home page linking to About, Portfolio, Resume and Contact pages, with a footer shared by every page." loading="lazy"></div>
+              <div class="work-body"><h3 class="h5 m-0">Site structure plan</h3></div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="work-card text-decoration-none" href="portfolio.html">
+              <div class="work-thumb"><img src="images/wireframes-plan-thumb.webp" width="720" height="297" alt="Three grey wireframes showing the layout of the home page, the portfolio page and the resume and contact page." loading="lazy"></div>
+              <div class="work-body"><h3 class="h5 m-0">Page wireframes</h3></div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="work-card text-decoration-none" href="portfolio.html">
+              <div class="work-thumb"><img src="images/colour-type-plan-thumb.webp" width="720" height="452" alt="Six colour swatches (navy, teal, cyan, slate, mist and amber) with hex codes, plus a sample of JetBrains Mono headings and Inter body text." loading="lazy"></div>
+              <div class="work-body"><h3 class="h5 m-0">Colour and typography plan</h3></div>
+            </a>
+          </div>
+        </div>
+        <a class="btn btn-accent" href="portfolio.html">See all work</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- NAVIGATION 2 of 2 and social links: the footer repeats the menu and
+       lists every way to get in touch. Same on every page. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-5">
+          <h2>Karlo Al Hindy</h2>
+          <p>ICT diploma student in Sydney, building towards a career in cyber security.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2>Pages</h2>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2>Get in touch</h2>
+          <ul class="footer-nav mb-3">
+            <li><a href="mailto:karlohindy@gmail.com">karlohindy@gmail.com</a></li>
+            <li><a href="tel:+61492981706">0492 981 706</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="https://github.com/Karlo22247698" aria-label="GitHub profile"><i class="bi bi-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/karlo-al-hindy-95a188400/" aria-label="LinkedIn profile"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <a href="mailto:karlohindy@gmail.com" aria-label="Email Karlo Al Hindy"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-base mb-0">&copy; 2026 Karlo Al Hindy. INFO1005 Website Design, Assessment 3.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript powers the mobile menu and the lightbox modal -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

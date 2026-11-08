@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Karlo Al Hindy</title>
+  <meta name="description" content="Portfolio of Karlo Al Hindy: planning work for this website, including the sitemap, wireframes and colour and type plan.">
+  <meta name="author" content="Karlo Al Hindy">
+  <meta name="theme-color" content="#0f1b2d">
+
+  <!-- Google Fonts: JetBrains Mono for headings, Inter for body text.
+       The same link is used on every page. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Favicon set (made with favicon.io style files, kept in the favicon folder) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- Bootstrap 5.3 and Bootstrap Icons (loaded from a CDN, with integrity checks) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+
+  <!-- Custom CSS comes AFTER Bootstrap so it can override it -->
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- NAVIGATION 1 of 2: sticky top menu, identical on every page.
+       data-bs-theme="dark" makes Bootstrap draw the mobile menu icon in white. -->
+  <nav class="navbar navbar-expand-lg sticky-top site-nav" data-bs-theme="dark" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="brand-mark" aria-hidden="true">K_</span>Karlo Al Hindy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+              aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page header with breadcrumb (a third way to move around the site) -->
+  <header class="page-header">
+    <div class="container">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+        </ol>
+      </nav>
+      <h1>Portfolio</h1>
+      <p class="lead">Planning work for this site. Select an image to view it larger.</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="work-heading">
+      <div class="container">
+        <h2 id="work-heading">Selected work</h2>
+        <p>Each project shows the problem, my role, the method and the outcome. I will add more projects here as I finish them.</p>
+        <div class="row g-4">
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="work-card">
+            <!-- The thumbnail is a normal link to the full image, so it still works without JavaScript.
+                 js/main.js turns it into a lightbox. -->
+            <a class="work-thumb" href="images/sitemap-plan.webp" data-lightbox data-title="Site structure plan">
+              <img src="images/sitemap-plan-thumb.webp" width="720" height="474" alt="Sitemap diagram: a Home page linking to About, Portfolio, Resume and Contact pages, with a footer shared by every page." loading="lazy">
+            </a>
+            <div class="work-body">
+              <h3>Site structure plan</h3>
+              <dl class="work-facts">
+                <dt>Problem</dt><dd>A portfolio needs a structure that lets a visitor reach key information in two clicks.</dd>
+                <dt>My role</dt><dd>Planner and designer.</dd>
+                <dt>Method</dt><dd>Sketched the page tree, the shared menu and the footer before writing any code.</dd>
+                <dt>Outcome</dt><dd>The five pages of this site follow this plan. The write-up pages shown are planned for later.</dd>
+              </dl>
+              <a class="btn btn-outline-teal btn-sm" href="images/sitemap-plan.webp" data-lightbox data-title="Site structure plan">View larger <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="work-card">
+            <!-- The thumbnail is a normal link to the full image, so it still works without JavaScript.
+                 js/main.js turns it into a lightbox. -->
+            <a class="work-thumb" href="images/wireframes-plan.webp" data-lightbox data-title="Page wireframes">
+              <img src="images/wireframes-plan-thumb.webp" width="720" height="297" alt="Three grey wireframes showing the layout of the home page, the portfolio page and the resume and contact page." loading="lazy">
+            </a>
+            <div class="work-body">
+              <h3>Page wireframes</h3>
+              <dl class="work-facts">
+                <dt>Problem</dt><dd>I needed to decide where content goes before choosing colours and fonts.</dd>
+                <dt>My role</dt><dd>Designer.</dd>
+                <dt>Method</dt><dd>Drew simple wireframes that show layout, hierarchy and navigation only.</dd>
+                <dt>Outcome</dt><dd>An early plan that guided the layout. The final site changed some wording and details.</dd>
+              </dl>
+              <a class="btn btn-outline-teal btn-sm" href="images/wireframes-plan.webp" data-lightbox data-title="Page wireframes">View larger <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="work-card">
+            <!-- The thumbnail is a normal link to the full image, so it still works without JavaScript.
+                 js/main.js turns it into a lightbox. -->
+            <a class="work-thumb" href="images/colour-type-plan.webp" data-lightbox data-title="Colour and typography plan">
+              <img src="images/colour-type-plan-thumb.webp" width="720" height="452" alt="Six colour swatches (navy, teal, cyan, slate, mist and amber) with hex codes, plus a sample of JetBrains Mono headings and Inter body text." loading="lazy">
+            </a>
+            <div class="work-body">
+              <h3>Colour and typography plan</h3>
+              <dl class="work-facts">
+                <dt>Problem</dt><dd>The site needed a palette and type that look professional and stay readable for everyone.</dd>
+                <dt>My role</dt><dd>Designer.</dd>
+                <dt>Method</dt><dd>Chose a navy, teal and cyan scheme with one amber accent, then checked contrast ratios against WCAG.</dd>
+                <dt>Outcome</dt><dd>Every text and background pair on the site meets the 4.5:1 contrast target.</dd>
+              </dl>
+              <a class="btn btn-outline-teal btn-sm" href="images/colour-type-plan.webp" data-lightbox data-title="Colour and typography plan">View larger <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX: one Bootstrap modal reused for every portfolio image. js/main.js fills it in. -->
+  <div class="modal fade" id="lightbox" tabindex="-1" role="dialog" aria-labelledby="lightbox-title" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="lightbox-title">Project image</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="lightbox-img" class="img-fluid lightbox-img" src="images/sitemap-plan.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION 2 of 2 and social links: the footer repeats the menu and
+       lists every way to get in touch. Same on every page. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-5">
+          <h2>Karlo Al Hindy</h2>
+          <p>ICT diploma student in Sydney, building towards a career in cyber security.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2>Pages</h2>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2>Get in touch</h2>
+          <ul class="footer-nav mb-3">
+            <li><a href="mailto:karlohindy@gmail.com">karlohindy@gmail.com</a></li>
+            <li><a href="tel:+61492981706">0492 981 706</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="https://github.com/Karlo22247698" aria-label="GitHub profile"><i class="bi bi-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/karlo-al-hindy-95a188400/" aria-label="LinkedIn profile"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <a href="mailto:karlohindy@gmail.com" aria-label="Email Karlo Al Hindy"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-base mb-0">&copy; 2026 Karlo Al Hindy. INFO1005 Website Design, Assessment 3.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript powers the mobile menu and the lightbox modal -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
